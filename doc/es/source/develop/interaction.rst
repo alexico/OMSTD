@@ -8,7 +8,7 @@ En este bloque se tratan los casos de estudio relacionados con:
 
 .. _it-001:
 
-IT-001 - Linea de comandos como entrada
+IT-001 - Línea de comandos como entrada
 ---------------------------------------
 
 TODO
