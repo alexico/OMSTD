@@ -12,7 +12,7 @@ Hacer herramientas de hacking no tiene porque ser tan complicado como puede pare
 
 Esta guía surge a partir de mi charla **"El Poder de los reptiles: Cómo hacer herramientas de seguridad en Python"** en `IV Navaja Negra Conference <http://navajanegra.com>`_.
 
-El objetivo de este proyecto es crear una metodología abierta y colaborativa con la que poder servir de apoyo al desarrollo de nuevas herramientas.
+El objetivo de este proyecto es crear una metodología abierta y colaborativa que sirva de apoyo al desarrollo de nuevas herramientas.
 
 Estado actual
 -------------
@@ -26,7 +26,7 @@ Poco a poco, y con la ayuda de todo el que quiera contribuir, espero que el núm
 
 Este texto es fruto de la experiencia, investigación propia y de los errores más comunes que me he encontrado cuando he tratado de desarrollar herramientas de hacking o usar otras en mi propio código.
 
-El objetivo de este texto es ser una pequeña guía de buenas prácticas (y que espero ampliar en un futuro) para la creación de herramientas portables, bien diseñadas y mantenibles.
+El objetivo de este texto no es otro que, ser una pequeña guía de buenas prácticas (y que espero ampliar en un futuro) para la creación de herramientas portables, bien diseñadas y mantenibles.
 
 **Las soluciones presentadas pueden no ser las mejores o más óptimas, son solo mis propuestas**. Cualquier mejora o sugerencia es bienvenida.
 
@@ -37,14 +37,14 @@ Cómo usar esta guía
 Teoría
 ++++++
 
-Si es la primera vez que lees esta guía, te recomiendo que la leas los casos de estudio en el orden que están planteados.
+Si es la primera vez que lees esta guía, te recomiendo que leas los casos de estudio en el orden que están planteados.
 
 Una vez estudiado y familiarizado con ellos tan solo tendrás que buscar el caso específico que necesites.
 
 Ejemplos
 ++++++++
 
-Todos los ejemplos se encuentran colgando del directorio **examples**. En él podrás encontrar una serie de carpetas que coinciden con los códigos de los bloques (:ref:`mirad más abajo <categories>` ) y una sub-carpeta con valores numéricos de 3 dígitos, que corresponde con un caso de estudio concreto, por ejemplo:
+Todos los ejemplos se encuentran colgando del directorio **examples**. En él podrás encontrar una serie de carpetas que coinciden con los códigos de los bloques (:ref:`mirad más abajo <categories>` ) y una sub-carpeta con valores numéricos de 3 dígitos, que se corresponden con un caso de estudio concreto, por ejemplo:
 
 .. code-block:: bash
 
@@ -106,7 +106,7 @@ Tal vez sea adelantar acontecimientos pero, para ponértelo más fácil, estas s
 5 - Instalar las dependencias globales de OMSTD
 +++++++++++++++++++++++++++++++++++++++++++++++
 
-Situados en el directorio raiz del proyecto de OMSTD ejecutamos:
+Situados en el directorio raíz del proyecto de OMSTD ejecutamos:
 
 .. code-block:: bash
 
