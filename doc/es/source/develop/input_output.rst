@@ -61,7 +61,7 @@ Para ello tenemos que declarar una clase estática global, que siga el patrón `
 
 .. note::
 
-    El patrón Singleton nos asegura que solo haya corriendo una instancia de un determinad objeto a la vez.
+    El patrón Singleton nos asegura que solo haya corriendo una instancia de un determinado objeto a la vez.
 
     Si se crea otra nueva instancia, internamente no creará un nuevo objeto, sino que "rescatará" de la memoria el primer objeto que se creó y se reutilizará.
 
