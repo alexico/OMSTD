@@ -1,7 +1,7 @@
 Comportamiento
 ==============
 
-En este bloque se tratan los casos de estudio relacionados con la integración con las formas de comportarse el entorno y sus frameworks asociados.
+En este bloque se tratan los casos de estudio relacionados con la integración, la forma en la que ha de comportarse el entorno y sus frameworks asociados.
 
 .. _bh-001:
 
@@ -11,7 +11,7 @@ BH-001 - Procesamiento de tareas costosas
 Problema
 ********
 
-No es fácil implementar un sistema de gestión y procesamiento de tareas en asíncronas o en background.
+No es fácil implementar un sistema de gestión y procesamiento de tareas asíncronas o en background.
 
 La finalidad de este tipo de tareas es poder realizar acciones de manera desatendida y, una vez finalizadas, informar de los resultados obtenidos.
 
@@ -21,7 +21,7 @@ La finalidad de este tipo de tareas es poder realizar acciones de manera desaten
 
     *Problema:*
 
-    Si esperamos a que el mail sea enviado, estaremos haciendo esperar al usuario y **puede que este tiempo sea muy largo** (Sobre todo si el envío de mail falla y hay que tratar de reenviar).
+    Si esperamos a que el mail sea enviado, estaremos haciendo esperar al usuario y **puede que ese tiempo sea muy largo** (Sobre todo si el envío de mail falla y hay que tratar de reenviar).
 
 Solución
 ********
@@ -69,7 +69,7 @@ Una forma de estructurar Celery es (¡puede haber más!):
 
     Las carpetas deben de convertirse en paquetes, incluyendo un fichero :file:`__init__.py`, en caso contrario no será reconocido y cargado por Celery.
 
-Como se puede ver la imagen anterior, tenemos las siguientes carpetas clave:
+Como se puede ver en la imagen anterior, tenemos las siguientes carpetas clave:
 
 + :file:`framework/`
 
@@ -91,7 +91,7 @@ Como se puede ver la imagen anterior, tenemos las siguientes carpetas clave:
 
     `framework/celery/celery.py <https://github.com/cr0hn/OMSTD/blob/master/examples/develop/bh/001/framework/celery/celery.py>`_
 
-    Contiene la información necesaria para cargar y configurar Celery. A continuación se muestran la lineas más importantes de este fichero:
+    Contiene la información necesaria para cargar y configurar Celery. A continuación se muestran la líneas más importantes de este fichero:
 
     .. literalinclude:: ../../../../examples/develop/bh/001/framework/celery/celery.py
         :linenos:
@@ -156,7 +156,7 @@ Funcionamiento avanzado
         if __name__ == '__main__':
             send_mail.delay()
 
-    Con este nuevo método quedría como sigue:
+    Con este nuevo método quedaría como sigue:
 
     .. code-block:: python
         :linenos:
@@ -212,7 +212,7 @@ A continuación se explican los pasos a seguir para arrancar un entorno que func
 
     Celery es un software que corre como servicio, actuando de orquestador entre nuestra aplicación y el sistema de mensajería. Debemos arrancar una instancia de Celery por cada aplicación que queramos correr.
 
-    La forma de arrancarlo está condicionada por la estructura de nuestro proyecto. La siguiente es una propuesta para de organización para nuestro código:
+    La forma de arrancarlo está condicionada por la estructura de nuestro proyecto. La siguiente es una propuesta de organización para nuestro código:
 
     .. code-block:: bash
 
