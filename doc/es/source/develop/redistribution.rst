@@ -20,7 +20,7 @@ Problema
 ********
 
 
-Mi proyecto tiene dependencias y no se cómo hacer que sean fácilmente instalables para que se puede redistribuirlos de forma sencilla.
+Mi proyecto tiene dependencias y no sé cómo hacer que sean fácilmente instalables y puedan ser redistribuidos de forma sencilla.
 
 Solución
 ********
