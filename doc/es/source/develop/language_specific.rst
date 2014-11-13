@@ -25,7 +25,7 @@ Python es mucho más lento que otros frameworks o lenguajes, como nodejs, que us
 
     ¿Qué es una **corrutina** (coroutine en inglés)?
 
-    Una `corrutina <http://en.wikipedia.org/wiki/Coroutine#Implementations_for_Python>`_ es una compontente (función, clase o método) capaz de suspender su ejecución hasta recibir un cierto estímulo:
+    Una `corrutina <http://en.wikipedia.org/wiki/Coroutine#Implementations_for_Python>`_ es una componente (función, clase o método) capaz de suspender su ejecución hasta recibir un cierto estímulo:
 
     .. image:: ../../../images/lp-001.01.png
 
@@ -40,7 +40,7 @@ Cómo
 
 `Ejemplo LP-001.P01 <https://github.com/cr0hn/OMSTD/blob/master/examples/develop/lp/001/lp-001-p1.py>`_
 
-Este ejemplo muestra como descargar el contenido de una URL, usando la **librería estándar** de Python 3.4:
+Este ejemplo muestra cómo descargar el contenido de una URL, usando la **librería estándar** de Python 3.4:
 
 .. literalinclude:: ../../../../examples/develop/lp/001/lp-001-p1.py
     :lines: 24-
@@ -71,7 +71,7 @@ Problema
 ********
 
 
-Python no tiene hilos ni multithreads real debido al `GIL <https://wiki.python.org/moin/GlobalInterpreterLock>`_ (Global Interpreter Lock). Éste restringe la ejecución a un único hilo corriendo a la vez. Esto es así porque, cuando se diseñó python, se prefirió que el motor fuera más simple su implementación, a costa de sacrificar la eficiente.
+Python no tiene hilos ni multithreads real debido al `GIL <https://wiki.python.org/moin/GlobalInterpreterLock>`_ (Global Interpreter Lock). Éste restringe la ejecución a un único hilo corriendo a la vez. Esto es así porque, cuando se diseñó python, se prefirió que el motor fuera más simple en su implementación, a costa de sacrificar la eficiencia.
 
 .. note::
 
@@ -80,7 +80,7 @@ Python no tiene hilos ni multithreads real debido al `GIL <https://wiki.python.o
 Solución
 ********
 
-Esto es cierto y no se puede hacer nada a día de hoy. Es el modo de funcionamiento de la VM de Python por defecto, CPython, no se puede lograr, multithreading real.
+Esto es cierto y no se puede hacer nada a día de hoy. Es el modo de funcionamiento de la VM de Python por defecto, CPython, no se puede lograr multithreading real.
 
 La solución, para lograr la `ejecución pararela <http://www.haskell.org/haskellwiki/Parallelism_vs._Concurrency>`_ en Python, es usar multiprocessing.
 
@@ -88,7 +88,7 @@ La solución, para lograr la `ejecución pararela <http://www.haskell.org/haskel
 
     Existen otras implementaciones de la máquina virtual de Python: `Diferentes implementaciones de la máquina virtual de PYthon <http://en.wikipedia.org/wiki/Python_(programming_language)#Implementations>`_
 
-    En el resto de implementaciones SI que existe el mutithread real, pero **tienen multitud de incompatibilidades** y no es recomendable su uso para propósito general.
+    En el resto de implementaciones SI que existe el mutithread real, pero **tienen multitud de incompatibilidades** y no es recomendable su uso para un propósito general.
 
 Cómo
 ****
@@ -144,7 +144,7 @@ Tenemos una función que ha de invocarse con 3 parámetros a través de un callb
         :lines: 25-
         :emphasize-lines: 1,8
 
-#. En nuestro código queremos ejecutar diferentes acciones, en función lo que el usuario indice en la linea de comandos, pero no podemos por el modo de funcionamiento del API externo: No podemos pasar como parámetro la operación y el primer dato:
+#. En nuestro código queremos ejecutar diferentes acciones, en función de lo que el usuario indique en la línea de comandos, pero no podemos por el modo de funcionamiento del API externo: No podemos pasar como parámetro la operación y el primer dato:
 
     `lp-003-p1.py <https://github.com/cr0hn/OMSTD/blob/master/examples/develop/lp/003/lp-003-p1.py>`_
 
@@ -158,7 +158,7 @@ Solución
 
 Usar los `partials <https://docs.python.org/2/library/functools.html#functools.partial>`_ de Python.
 
-Un *partial* en una función que se puede construida por partes, dejando una parte fija y otra variable. Siguiendo con el ejemplo anterior:
+Un *partial* en una función que puede ser construida por partes, dejando una parte fija y otra variable. Siguiendo con el ejemplo anterior:
 
     #. deberíamos dejar como parte "fija":
 
@@ -194,7 +194,7 @@ LP-004 - "__main__" y ejecuciones accidentales
 Problema
 ********
 
-Cuando Python se invoca, por como está concebido, lee y ejecuta todas los los ficheros y dependencias.
+Cuando Python se invoca, por como está concebido, lee y ejecuta todos los ficheros y dependencias.
 
 Esto puede implicar:
 
@@ -246,7 +246,7 @@ Cuando trabajamos con *handlers* (o descriptores) ya sean de archivo, red o de c
 #. Uso del descriptor
 #. Cierre del descriptor.
 
-El paso 3, *cierre del descriptor*, es uno de los grandes olvidados por:
+El paso 3, *cierre del descriptor*, es uno de los grandes olvidados porque:
 
 + Se omite por descuido del programador.
 + No se cierra adecuadamente: a causa de algún problema y errores.
