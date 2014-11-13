@@ -14,7 +14,7 @@ OMSTD (Open Methodology for Security Tool Developers) es una serie de casos de e
 
 Aunque puede ser usada para crear cualquier tipo de herramientas y en cualquier lenguaje, se centra principalmente en el desarrollo de herramientas de hacking escritas en Python.
 
-Sería muy recomendable para el lector **leer con detenidamente la sección** :ref:`Qué es OMSTD <start>` **, ya que le ayudará a comprender esta guía**.
+Sería muy recomendable para el lector **leer detenidamente la sección** :ref:`Qué es OMSTD <start>` **, ya que le ayudará a comprender esta guía**.
 
 Autor
 -----
@@ -88,7 +88,7 @@ Los casos de estudio se dividen en los siguientes bloques:
   + **Interacción (IT)**: Interacción de usuario, con otros sistemas o con otros entornos.
   + **Específico de lenguaje (LS)**: Trucos, buenas prácticas y usos concretos del lenguaje de desarrollo. Python en este caso.
   + **Entrada/salida de información (IO)**: Generar de informes (Word, Excel...), exportar datos, importar información externa de XML/JSON...
-  + **Redistribución (RD)**: Crear de paquetes, redistribuirlos, compilarlos para varios sistemas, portarlos a varios entornos, uso correcto de sistemas de control de versiones, etc.
+  + **Redistribución (RD)**: Crear paquetes, redistribuirlos, compilarlos para varios sistemas, portarlos a varios entornos, uso correcto de sistemas de control de versiones, etc.
   + **Despliegue (DP)**: Cómo poner en producción de forma correcta nuestra aplicación.
 
 + **Hacking** (HH): Ejemplos de casos concretos de hacking.
