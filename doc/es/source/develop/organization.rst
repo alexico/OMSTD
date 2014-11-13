@@ -16,7 +16,7 @@ Problema
 
 Muchas herramientas no contemplan la opción de ser usadas como librería (con un "import") además de por linea de comandos, o la interfaz que tengan definida.
 
-Su uso puede ser complicado y, muchas veces, tan solo pueden ser usadas por linea de comandos, lo que implica llamar a un proceso externo del sistema y parsear su salida.
+Su uso puede ser complicado y, muchas veces, tan solo pueden ser usadas por línea de comandos, lo que implica llamar a un proceso externo del sistema y parsear su salida.
 
 Solución
 ********
@@ -37,7 +37,7 @@ Donde:
 + **requirements.txt**: Contiene las dependencias de librerías externas de nuestro proyecto.
 + **setup.py**: Contiene información para la instalación, configuración y redistribución de nuestro software.
 + **TODO.rst**: Ideas futuras a implementar en nuestro proyecto. Es buena idea tenerlo por si alguien quiere colaborar con nuestro proyecto, ya que podrá encontrar tareas e ideas por hacer.
-+ **app_name**: Carpeta, que actúa como paquete Python, con el nombre de nuestra aplicación.
++ **app_name**: Carpeta que actúa como paquete Python, con el nombre de nuestra aplicación.
 + **app_name/bin**: Ejecutables disponibles en nuestra aplicación.
 + **app_name/doc**: Archivos de documentación, usualmente escrita con `Shpinx <http://sphinx-doc.org>`_. Esta guía es un ejemplo de su uso.
 + **app_name/lib**: Librerías propias que genere nuestra aplicación.
@@ -58,11 +58,11 @@ Una vez preparada la estructura para nuestra aplicación, ahora queremos "llamar
 
 * Añadir nuevos parámetros de entrada al programa, requiere muchos cambios.
 * El código se hace cada vez más enrevesado e inmanejable.
-* Cambios de versiones de un mismos programas son incompatibles.
+* Cambios de versiones de un mismo programa son incompatibles.
 
 `Ejemplo ST-002.P01 <https://github.com/cr0hn/OMSTD/blob/master/examples/develop/st/002/st-002-p1.py>`_
 
-Este ejemplo de programa que divide dos números. Acepta 2 parámetros por linea de comandos:
+Este ejemplo de programa que divide dos números. Acepta 2 parámetros por línea de comandos:
 
 * Nominado
 * Denominador
@@ -87,7 +87,7 @@ Vemos que hay que modificar el código en 2 sitios diferentes. En todos aquellos
 Solución
 ********
 
-Hacer un objeto global que sea el que contenga los parámetros globales de ejecución (proyectos grandes, como nmap, proyecto lo hacen de esta forma):
+Hacer un objeto global que sea el que contenga los parámetros globales de ejecución (proyectos grandes, como nmap, lo hacen de esta forma):
 
 Cómo
 ****
@@ -125,7 +125,7 @@ Usando el mismo ejemplo que en el anterior caso:
     :lines: 25-
     :linenos:
 
-Cuando queremos añadir un parámetro nuevo en la devolución, vemos que hay que modificar varias lineas de código:
+Cuando queremos añadir un parámetro nuevo en la devolución, vemos que hay que modificar varias líneas de código:
 
 `Ejemplo ST-003.P02 <https://github.com/cr0hn/OMSTD/blob/master/examples/develop/st/003/st-003-p2.py>`_
 
@@ -137,10 +137,10 @@ Cuando queremos añadir un parámetro nuevo en la devolución, vemos que hay que
 Solución
 ********
 
-Usar objetos genéricos que contengan la información resultante de la ejecución del a herramienta.
+Usar objetos genéricos que contengan la información resultante de la ejecución de la herramienta.
 
-Además, estos objetos, nos permiten abstraer el almacenamiento de información, de cómo ésta es exportada o transformada: XML, JSON, HTML, PDF ...
-
+Además, estos objetos, nos permiten abstraer el almacenamiento de información de cómo ésta es exportada o transformada: XML, JSON, HTML, PDF ...
+ 
 Cómo
 ****
 
@@ -165,7 +165,7 @@ Problema
 
 Tengo que cambiar mucho código y rehacer gran parte de mi aplicación, cada vez que quiero hacer una nueva UI (User Interface):
 
-* Linea de comandos.
+* Línea de comandos.
 * Interfaz gráfica.
 * Web.
 * Que se use como librería.
@@ -189,7 +189,7 @@ Incluir el concepto de api.py y enseñar como el command line y el import funcio
 
 `Ejemplo ST-004.P01 <https://github.com/cr0hn/OMSTD/blob/master/examples/develop/st/004/>`_
 
-Tras incluir el fichero "api.py", la UI de linea de comandos (`st-004-s1.py <https://github.com/cr0hn/OMSTD/blob/master/examples/develop/st/004/st-004-s1.py>`_) nos quedará como sigue:
+Tras incluir el fichero "api.py", la UI de línea de comandos (`st-004-s1.py <https://github.com/cr0hn/OMSTD/blob/master/examples/develop/st/004/st-004-s1.py>`_) nos quedará como sigue:
 
 .. literalinclude:: ../../../../examples/develop/st/004/st-004-s1.py
     :lines: 26-
@@ -197,7 +197,7 @@ Tras incluir el fichero "api.py", la UI de linea de comandos (`st-004-s1.py <htt
     :emphasize-lines: 1,16
 
 
-Si echamos un vistazo a `api.py <https://github.com/cr0hn/OMSTD/blob/master/examples/develop/004/api.py>`_, podemos observar que este fichera centraliza las llamadas al resto de librerías:
+Si echamos un vistazo a `api.py <https://github.com/cr0hn/OMSTD/blob/master/examples/develop/004/api.py>`_, podemos observar que este fichero centraliza las llamadas al resto de librerías:
 
 .. literalinclude:: ../../../../examples/develop/st/004/api.py
     :lines: 28-
